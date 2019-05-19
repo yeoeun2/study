@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>test</title>
+    <meta chraset="utf-8" />
+    <style>
+        td,
+        th,
+        table {
+            border: 1px solid red;
+            width: 100%
+        }
+
+        table {
+            table-layout: fixed
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>연습</caption>
+        <colgroup>
+            <col style="width:25%" />
+            <col style="width:25%" />
+            <col style="width:25%" />
+            <col style="width:25%" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">A</th>
+                <th scope="col">B</th>
+                <th scope="col">C</th>
+                <th scope="col">D</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">1.5</td>
+                <td>2</td>
+                <td colspan="2">3.4</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="3">9.13.17</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td colspan="3">14.15.16</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

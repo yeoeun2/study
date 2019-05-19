@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>table test</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <table border="1" style="width:100%; table-layout: fixed">
+        <caption>table test2</caption>
+        
+        <col span="2" style="width:10%" />
+        <col span="4" style="width:20%; background: red" />
+
+        <thead>
+            <tr>
+                <th scope="row" rowspan="2">c</th>
+                <th scope="col" colspan="2">a</th>
+                <th scope="col" colspan="3">b</th>
+            </tr>
+            <tr>
+                <th scope="col">a-a</th>
+                <th scope="col">a-b</th>
+                <th scope="col">b-a</th>
+                <th scope="col">b-b</th>
+                <th scope="col">b-c</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">c-a</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th scope="row">c-b</th>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">c-c</th>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
