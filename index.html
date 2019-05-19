@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>study</title>
+        <style>
+            td,th,
+            table{border:1px solid red;  width:100%}
+            table{table-layout: fixed}
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>스타벅스 가격표</h1>
+        <table>
+            <caption>스타벅스 가격표 - 제품명,가격으로 구성된 정보입니다.</caption>
+            <colgroup>
+                <col style="width:30%" />
+                <col style="width:40%" />
+                <col style="width:auto" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">브랜드</th>
+                    <th scope="col" colspan="2">제품명</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">스타벅스</th>
+                    <th scope="row">아메리카노</th>
+                    <td>3,000원</td>
+                </tr>
+                <tr>
+                    <th scope="row">라떼</th>
+                    <td>3,000원</td>
+                </tr>
+                <tr>
+                    <th scope="row">라떼2</th>
+                    <td>3,000원</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">커피빈</th>
+                    <th scope="row">아메리카노</th>
+                    <td>3,000원</td>
+                </tr>
+                <tr>
+                    <th scope="row">라떼</th>
+                    <td>3,000원</td>
+                </tr>
+                <tr>
+                    <th scope="row">라떼2</th>
+                    <td>3,000원</td>
+                </tr>
+            </tbody>
+ 
+        </table>
+
+    </body>
+</html>
