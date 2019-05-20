@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>table</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no" />
+        <style>
+            table{width: 100%; table-layout: fixed;}
+            .col-auto{width:auto}
+        </style>
+    </head>
+    <body>
+        <table border="1">
+        <caption>
+            <strong>보험료예시</strong>
+            <p>나이, 구분, 성별, 기본플랜, 표준플랜, 고급플랜 정보입니다.</p>
+        </caption>
+        <colgroup>
+        <col class="col-auto" span="6">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">나이</th>
+                <th scope="col">구분</th>
+                <th scope="col">성별</th>
+                <th scope="col">기본플랜</th>
+                <th scope="col">표준플랜</th>
+                <th scope="col">고급플랜</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="6">30세</th>
+                <th scope="row" rowspan="2">보장보험료</th>
+                <th scope="row">남</th>
+                <td>2,941원</td>
+                <td>7,383원</td>
+                <td>8,375원</td>
+            </tr>
+            <tr>
+                <th scope="row">여</th>
+                <td>2,851원</td>
+                <td>5,370원</td>
+                <td>6,025원</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">적립보험료</th>
+                <th scope="row">남</th>
+                <td>6,959원</td>
+                <td>5,517원</td>
+                <td>8,525원</td>
+            </tr>
+            <tr>
+                <th scope="row">여</th>
+                <td>7,049원</td>
+                <td>7,530원</td>
+                <td>10,875원</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">납입보험료</th>
+                <th scope="row">남</th>
+                <td>9,900원</td>
+                <td>12,900원</td>
+                <td>16,900원</td>
+            </tr>
+            <tr>
+                <th scope="row">여</th>
+                <td>9,900원</td>
+                <td>12,900원</td>
+                <td>16,900원</td>
+            </tr>
+        </tbody>
+        </table>
+        <dl>
+            <dt>유턴 자동차와 앞지르기하던 오토바이, 누구의 과실일까?</dt>
+            <dd>홍길동 씨는 편도 3차선 도로에서 좌회전 차선을 주행하던 중 잘못 진입한 것을 알고 유턴 구간에 못 미쳐 중앙선을 침범해 유턴을 시도했다. 그때 뒤따르던 오토바이 운전자인 전우치 씨가 앞지르기를 시도하다가 접촉사고가 발생했다. 홍 씨는 오토바이에 신호를…</dd>
+        </dl>
+        <ul>
+            <li>보험료 납입주기 : 월납, 3개월납, 6개월납, 연납</li>
+            <li>만기환급금 
+                <ul>
+                    <li>보장부분 : 없음</li>
+                    <li>적립부분 : 적립부분 순보험료(적립보험료에서 계약 체결비용 및 계약관리비용을 제외한 금액)를 기준으로 공시이율을 적용하여 만기까지 적립한 금액을 만기까지 적립한 금액(단, 최저보증이율 연단위 복리 0.5%)</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
