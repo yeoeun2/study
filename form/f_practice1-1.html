@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>form_practice1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="t1">telnumber : </label>
+            <input type="text" value="" id="t1" maxlength="3" title="핸드폰번호 앞자리" />
+            <input type="text" value="" id="t2" maxlength="4" title="핸드폰번호 두번째자리" />
+            <input type="text" value="" id="t3" maxlength="4" title="핸드폰번호 마지막자리" />
+        </div>
+
+        <label for="color">color : </label>
+        <select id="color" title="색상 선택">
+            <option>red</option>
+            <option>pink</option>
+            <option>blue</option>
+            <option>black</option>
+        </select>
+        <div>
+            <h1>지금 가장 먹고싶은 것은? (중복선택 가능)</h1>
+                <input type="checkbox" id="ck1" checked />
+                <label for="ck1">떡볶이</label>
+
+                <input type="checkbox" id="ck2" />
+                <label for="ck2">치킨</label>
+
+                <input type="checkbox" id="ck3" />
+                <label for="ck3">피자</label>
+
+                <input type="checkbox" id="ck4" disabled />
+                <label for="ck4">평양냉면</label>
+        </div>
+        <div>
+            <h2>위의 음식을 선택한 이유는?</h2>
+                <input type="radio" id="rd1" name="rd" />
+                <label for="rd1">가격에 비해 양이 많다.</label>
+
+                <input type="radio" id="rd2" name="rd" />
+                <label for="rd2">제일 좋아하는 음식이다.</label>
+
+                <input type="radio" id="rd3" name="rd" />
+                <label for="rd3">기타</label>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

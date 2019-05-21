@@ -1,12 +1,61 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>form_practice1</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <form>
-            <input type="text">
-        </form>
-    </body>
+
+<head>
+    <title>form_practice1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <h3>필수입력</h3>
+        <fieldset>
+            <legend>필수입력</legend>
+            <div>
+                <label for="aaa1">전화번호</label>
+                <input type="text" value="" id="aaa1" />
+            </div>
+            <div>
+                <label for="p1">password</label>
+                <input type="password" value="" id="p1" />
+            </div>
+
+            <input type="text" value="" id="aaa3" title="전화번호 앞자리" placeholder="하이픈없이 입력하세요" />
+            <input type="text" value="dddd" id="aaa3" title="전화번호 앞자리" readonly />
+            <br />
+            <input type="checkbox" id="b1" checked />
+            <label for="b1">떡볶이</label>
+
+            <input type="checkbox" id="b2" />
+            <label for="b2">오뎅</label>
+
+            <input type="checkbox" id="b3" disabled />
+            <label for="b3">순대</label>
+            <br />
+
+            <input type="radio" id="c1" name="c" />
+            <label for="c1">남</label>
+
+            <input type="radio" id="c2" name="c" />
+            <label for="c2">여</label>
+
+            <input type="radio" id="c4" name="d" />
+            <label for="c4">신</label>
+
+            <label for="e1">나이</label>
+            <select id="e1" title="나이 선택">
+                <option>0</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+            </select>
+
+            <label for="f1">나이</label>
+            <textarea id="f1" placeholder="하이픈없이 입력하세요"></textarea>
+        </fieldset>
+
+
+    </form>
+</body>
+
 </html>
