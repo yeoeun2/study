@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>form_practice2-1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+    <h1>법인고객등록에 필요한 정보를 입력해 주세요.</h1>
+    
+        <label for="b1">사업자번호</label>
+        <input type="text" id="b1" value="123-45-56975" readonly />
+
+        <label for="b2">법인번호</label>
+        <input type="text" id="b2" value="1101113402588" readonly />
+
+        <br /><label for="b3">본사법인명<span aria-label="필수">*</span></label>
+        <input type="text" id="b3" value="" />
+
+        <label for="b4">대표자명*</label>
+        <input type="text" id="b4" value="" />
+
+        <br />
+        <label for="s1">대표자 생년월일*</label>
+        <select id="s1" title="태어난 년도">
+            <option>선택</option>
+            <option>1980</option>
+            <option>1979</option>
+            <option>1978</option>
+            <option>1977</option>
+            <option>1976</option>
+        </select>
+        년
+
+        <select id="s2" title="태어난 월">
+            <option>선택</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+        월
+
+        <select id="s3" title="태어난 일">
+            <option>선택</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+        일
+
+        <label for="s4">대표자 국적*</label>
+        <select id="s4" title="대표자 국적 선택">
+            <option>선택하세요</option>
+            <option>한국</option>
+            <option>미국</option>
+            <option>중국</option>
+        </select>
+
+        <br /><label for="s5">설립목적</label>
+        <select id="s5" title="설립목적 선택">
+            <option>선택하세요</option>
+            <option>돈이 많아서</option>
+            <option>잘생겨서</option>
+            <option>예뻐서</option>
+        </select>
+
+        <label for="s6">지점명</label>
+        <input type="text" id="s6" value="" />
+
+        <br /><label for="s7">우편물 수령처*</label>
+        <input type="text" id="s7" value="" />
+
+        <br /><label for="s8">연락처*</label>
+        <select id="s8" title="휴대전화 앞자리">
+            <option>선택하세요</option>
+            <option>010</option>
+            <option>011</option>
+            <option>070</option>
+        </select>
+        <input type="text" value="" title="연락처 뒷자리" placeholder="'-'없이 입력하세요" />
+
+        <br /><label for="s11">FAX</label>
+        <select id="s11" title="팩스번호 앞자리">
+            <option>선택하세요</option>
+            <option>02</option>
+            <option>031</option>
+            <option>070</option>
+        </select>
+        <input type="text" value="" title="연락처 뒷자리" placeholder="'-'없이 입력하세요" />
+
+        <br /><label for="b5">영문명</label>
+        <input type="text" id="b5" value="" />
+
+        <br />업태/종목*
+        <button type="button">업태/종목검색</button>
+        <input type="text" value="" title="업태" readonly />
+        <input type="text" value="" title="종목" readonly />
+
+    <h1>보험계약 관리(만기 안내 등)을 받으실 연락처를 입력해 주세요</h1>
+        <label for="m1">휴대폰번호</label>
+        <select title="휴대폰번호 앞자리" id="m1" >
+            <option>010</option>
+            <option>011</option>
+            <option>018</option>
+            <option>019</option>
+        </select>
+        <input type="text" value="" placeholder="'-'없이 입력하세요" maxlength="8" />
+
+        <br /><label for="m2">직통 연락처</label>
+        <select title="직통 연락처 앞자리" id="m2">
+            <option>02</option>
+            <option>031</option>
+            <option>011</option>
+            <option>010</option>
+        </select>
+        <input type="text" value="" placeholder="'-'없이 입력하세요" />
+
+        <br><label for="m3">이메일</label>
+        <input type="text" id="m3" value="" title="이메일주소 앞자리" />
+        @
+        <select title="이메일 계정">
+            <option>선택하세요</option>
+            <option>naver.com</option>
+            <option>hanmail.net</option>
+            <option>nate.com</option>
+        </select>
+        <button type="button">중복확인</button>
+    </form>
+</body>
+
+</html>

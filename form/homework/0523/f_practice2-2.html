@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>form_practice2</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>법인고객 등록에 필요한 정보를 입력해 주세요.</h1>
+    <table border="1">
+        <caption>법인고객 등록에 필요한 정보들을 입력한 표 입니다</caption>
+        <col />
+        <col />
+        <col />
+        <col />
+        <tbody>
+            <tr>
+                <th scope="row">사업자번호</th>
+                <td>123-45-56975</td>
+                <th>법인번호</th>
+                <td>1101132435</td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="n1">본사법인명<span aria-label="필수">*</span></label></th>
+                <td>
+                    <input type="text" id="n1" value="" title="본사법인명" />
+                </td>
+                <th scope="row"><label for="n2">대표자명<span aria-label="필수">*</span></label></th>
+                <td>
+                    <input type="text" id="n2" value="" title="대표자명" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="n3">대표자 생년월일<span aria-label="필수">*</span></label></th>
+                <td>
+                    <select id="n3" title="태어난 년도">
+                        <option hidden>선택</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                    </select>
+                    년
+                    <select title="태어난 월">
+                        <option hidden>선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    월
+                    <select title="태어난 일">
+                        <option hidden>선택</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </td>
+
+                <th scope="row"><label for="n4">대표자 국적<span aria-label="필수">*</span></label></th>
+                <td>
+                    <select id="n4" title="대표자 국적">
+                        <option hidden>선택하세요</option>
+                        <option>korea</option>
+                        <option>china</option>
+                        <option>japan</option>
+                        <option>america</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="n5">설립목적</label></th>
+                <td>
+                    <select id="n5" title="설립목적">
+                        <option hidden>선택하세요</option>
+                        <option>하고 싶어서</option>
+                        <option>하기 싫어서</option>
+                    </select>
+                </td>
+                <th scope="row"><label for="n6">지점명</label></th>
+                <td>
+                    <input type="text" id="n6" value="" title="지점명" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="n7">우편물 수령처<span aria-label="필수">*</span></label></th>
+                <td colspan="3">
+                    <input type="text" id="n7" value="" title="우편물 수령처" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="n8">연락처<span aria-label="필수">*</spna></label></th>
+                <td colspan="3">
+                    <select id="n8" title="연락처 앞자리">
+                        <option hidden>선택하세요</option>
+                        <option>010</option>
+                        <option>011</option>
+                        <option>018</option>
+                    </select>
+                    <input type="text" value="" title="연락처 뒷자리" placeholder="'-'없이 입력하세요" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="n9">FAX</label></th>
+                <td colspan="3">
+                    <select id="n9" title="FAX번호 앞자리">
+                        <option hidden>선택하세요</option>
+                        <option>02</option>
+                        <option>031</option>
+                        <option>070</option>
+                    </select>
+                    <input type="text" value="" title="FAX번호 뒷자리" placeholder="'-'없이 입력하세요" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="n10">영문명</label></th>
+                <td colspan="3">
+                    <input type="text" id="n10" value="" title="영문이름" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">업태/종목<span aria-label="필수">*</spna>
+                </th>
+                <td colspan="3">
+                    <button type="button">업태/종목 검색</button>
+                    <input type="text" value="" title="업태" />
+                    <input type="text" value="" title="종목" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>보험계약 관리(만기 안내 등)를 받으실 연락처를 입력해 주세요.</h1>
+    <table border="1">
+        <caption>보험계약 관리를 받으실 연락처,이메일을 기입한 표 입니다</caption>
+        <col />
+        <col />
+        <col />
+        <col />
+        <tbody>
+            <tr>
+                <th scope="row"><label for="p1">휴대폰번호</label></th>
+                <td colspan="3">
+                    <select id="p1" title="휴대폰번호 앞자리">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>017</option>
+                    </select>
+                    <input type="text" value="" title="휴대폰번호 뒷자리" placeholder="'-'없이 입력하세요" maxlength="8">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="p2">직통 연락처</label></th>
+                <td colspan="3">
+                    <select id="p2" title="직통 연락처 앞자리">
+                        <option hidden>선택하세요</option>
+                        <option>02</option>
+                        <option>031</option>
+                        <option>070</option>
+                    </select>
+                    <input type="text" value="" title="직통 연락처 뒷자리" placeholder="'-'없이 입력하세요">
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="p3">이메일</label></th>
+                <td colspan="3">
+                    <input type="text" id="p3" value="" title="이메일주소 앞">
+                    <select title="이메일주소 계정">
+                        <option hidden>선택하세요</option>
+                        <option>naver.com</option>
+                        <option>hanmail.net</option>
+                        <option>nate.com</option>
+                    </select>
+                    <button type="button">중복확인</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
