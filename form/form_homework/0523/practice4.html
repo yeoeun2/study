@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>form_practice4</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>배송지 정보 입력</h1>
+    <table border="1">
+        <caption>배송지 정보(배송지,받는 분,주소,휴대전화,배송시 요구사항,주문자정보)를 넣은 표 입니다.</caption>
+        <col />
+        <col />
+
+        <tbody>
+            <tr>
+                <th scope="row">배송지선택</th>
+                <td>
+                    <input type="radio" id="b1" name="rd" />
+                    <label for="b1">기본배송지</label>
+                    <input type="radio" id="b2" name="rd" />
+                    <label for="b2">최근배송지</label>
+                    <input type="radio" id="b3" name="rd" checked />
+                    <label for="b3">직접입력</label>
+                    <button type="button">배송지목록</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="bb1">받으시는 분</label></th>
+                <td>
+                    <input type="text" id="bb1" value="" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">주소</th>
+                <td>
+                    <input type="text" value="" title="주소 우편번호" checked disabled />
+                    <button type="button">주소찾기</button>
+                    <br /><input type="text" value="" title="자세한 주소" checked disabled />
+                    <br /><input type="text" value="" title="자세한 주소" />
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="bb2">휴대전화</label></th>
+                <td>
+                    <select id="bb2" title="휴대전화 앞자리">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>017</option>
+                    </select>
+                    -
+                    <input type="text" value="" title="휴대전화 가운데자리" maxlength="4" />
+                    -
+                    <input type="text" value="" title="휴대전화 끝자리" maxlength="4" />
+
+                    <input type="checkbox" id="bb3" />
+                    <label for="bb3">안심번호 사용(무료)</label>
+
+                    <input type="checkbox" id="bb4" />
+                    <label for="bb4">연락처 추가 입력</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row"><label for="bb5">배송시요구사항</label></th>
+                <td>
+                    <input type="text" id="bb5" value="" />
+                    (0자/50자)
+                    <br />*특정한 배송일을 지정하고자 할 경우 판매자와 연락하여 배송일을 확인해주시기 바랍니다.
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">주문자 정보</th>
+                <td>윤여은</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>전자상거래 소비자보호 법률에 따른 어쩌구 저쩌구 블라블라~~</h2>
+</body>
+
+</html>
