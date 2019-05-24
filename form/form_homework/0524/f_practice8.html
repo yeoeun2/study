@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>form_practice7</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <table border="2">
+        <caption>자동차보험 할인항목,할인율,할인보험료,할인추가 등을 알려주는 표입니다.</caption>
+        <colgroup>
+            <col span="2" />
+        </colgroup>
+        <col />
+        <col />
+        <col />
+        <thead>
+            <tr>
+                <th scope="colgroup" colspan="2">할인항목</th>
+                <th scope="col">할인율</th>
+                <th scope="col">할인보험료</th>
+                <th scope="col">할인추가</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">자동할인</th>
+                <th scope="row">다이렉트 할인</th>
+                <td>평균17.2%</td>
+                <td>68,190원</td>
+                <td>자동할인적용</td>
+            </tr>
+
+            <tr>
+                <th scope="row">무사고 할인(차량별</th>
+                <td>평균12.9%</td>
+                <td>42,820원</td>
+                <td>자동할인적용</td>
+            </tr>
+
+            <tr>
+                <th scope="row" rowspan="6">차량안전 부속할인</th>
+                <th scope="row">에어백 할인</th>
+                <td></td>
+                <td>740원</td>
+                <td>할인적용</td>
+            </tr>
+
+            <tr>
+                <th scope="row">ABS 할인
+                    <button type="button">?</button>
+                </th>    
+                <td></td>
+                <td>17,750원</td>
+                <td>할인적용</td>
+            </tr>
+
+            <tr>
+                <th scope="row">차량안전장치 할인</th>
+                <td></td>
+                <td>3,430원</td>
+                <td>할인적용</td>
+            </tr>
+
+            <tr>
+                <th scope="row">차선이탈경고장치 할인</th>
+                <td></td>
+                <td>0원</td>
+                <td>
+                    <input type="radio" id="c1" name="aa" />
+                    <label for="c1">예</label>
+                    <input type="radio" id="c2" name="aa" checked />
+                    <label for="c2">아니오</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">전방충돌경고장치 할인</th>
+                <td></td>
+                <td>0원</td>
+                <td>
+                    <input type="radio" id="c3" name="bb" />
+                    <label for="c3">예</label>
+                    <input type="radio" id="c4" name="bb" checked />
+                    <label for="c4">아니오</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">블랙박스 특약</th>
+                <td>1.5%</td>
+                <td>4,760원</td>
+                <td>
+                    <input type="radio" id="c5" name="cc" checked />
+                    <label for="c5">예</label>
+                    <input type="radio" id="c6" name="cc" />
+                    <label for="c6">아니오</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row" rowspan="4">선택할인</th>
+                <th scope="row">주행거리 특약(후할인 예정)</th>
+                <td>5%~31%</td>
+                <td>(15,840원~98,310원)</td>
+                <td>
+                    <input type="radio" id="c7" name=dd checked />
+                    <label for="c7">예</label>
+                    <input type="radio" id="c8" name="dd" />
+                    <label for="c8">아니오</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">UBI 안전운전 할인특약</th>
+                <td>10%</td>
+                <td>31,720원</td>
+                <td>
+                    <input type="radio" id="c9" name=ee checked />
+                    <label for="c9">예</label>
+                    <input type="radio" id="c10" name="ee" />
+                    <label for="c10">아니오</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">Baby in Car 특약</th>
+                <td>3%~15%</td>
+                <td>0원</td>
+                <td>
+                    <input type="radio" id="c11" name=ff />
+                    <label for="c11">예</label>
+                    <input type="radio" id="c12" name="ff" checked />
+                    <label for="c12">아니오</label>
+                </td>
+            </tr>
+
+            <tr>
+                    <th scope="row">에버그린 특약</th>
+                    <td></td>
+                    <td>2,000원</td>
+                    <td>
+                        <input type="radio" id="c13" name=ff checked />
+                        <label for="c13">예</label>
+                        <input type="radio" id="c14" name="ff" />
+                        <label for="c14">아니오</label>
+                    </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</body>
+
+</html>
