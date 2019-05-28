@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>나혼자 공부2</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <table border="1">
+        <caption>블라블라</caption>
+        <col />
+        <col />
+
+        <tbody>
+            <tr>
+                <th scope="col" colspan="2"><label for="v1">이름</label></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="v1" value="" placeholder="이름" />
+                    <button type="button">남</button>
+                    <button type="button">여</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="col"><label for="v2">생년월일</label></th>
+                <th scope="col"><label for="v3">전화번호</label></th>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" id="v2" value="" placeholder="생년월일 예)19910101" maxlength="8" />
+                </td>
+                <td>
+                    <select id="v3" title="전화번호 앞자리">
+                        <option hidden>선택</option>
+                        <option>010</option>
+                        <option>018</option>
+                        <option>017</option>
+                        <option>019</option>
+                    </select>
+                    <input type="text" value="" title="전화번호 나머지" placeholder="'-'를 뺀 나머지번호 입력">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="checkbox" id="v4" value="" />
+    <label for="v4">개인정보 수집 이용동의</label>
+    <br /><button type="button">내보험찾기 신청</button>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>나혼자 공부2</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <p>로그인하시면 인증절차 없이 간편하게 결과를 확인 할 수 있습니다.</p>
+    <table border="1">
+        <caption>개인정보 입력</caption>
+        <col />
+        <col />
+
+        <tbody>
+            <tr>
+                <th scope="row">설계하시는 분</th>
+                <td>
+                    <label for="s1">이름</label>
+                    <input type="text" id="s1" value="" />
+
+                    <br /><label for="s2">생년월일</label>
+                    <input type="text" id="s2" value="" placeholder="예) 19980325" />
+                    <input type="radio" id="s3" name="naver" />
+                    <label for="s3">남</label>
+                    <input type="radio" id="s4" name="naver" />
+                    <label for="s4">여</label>
+
+                    <br /><label for="s5">휴대폰</label>
+                    <select id="s5" title="휴대폰번호 앞자리">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>017</option>
+                        <option>019</option>
+                    </select>
+                    -
+                    <input type="text" value="" title="핸드폰번호 가운데자리" maxlength="4" />
+                    -
+                    <input type="text" value="" title="핸드폰번호 끝자리" maxlength="4" />
+                    <button type="button">인증번호 보내기</button>
+
+                    <p>설계서를 메일로 받아보시겠습니까?
+                        <input type="checkbox" id="s6" value="" />
+                        <label for="s6">예</label></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    피보험자의 직업, 직무, 기타사항으로 인해 보험가입금액이 제한되거나 가입이 거절될 수 있으며, 경우에 따라서는 건강진단 결과를 요구할 수도 있습니다.
+    <p><input type="checkbox" id="s7" value="" checked />
+    <label for="s7">개인정보 수집 이용동의</label>
+    <button type="button">보기</button></p>
+</body>
+</html>

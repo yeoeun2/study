@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>table12</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <table border="2">
+            <caption>보험료 확인할때 필요한 개인정보</caption>
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+
+            <thead>
+                <tr>
+                    <th scope="col"><label for="x1">이름</label></th>
+                    <th scope="col"><label for="x2">생년월일</label></th>
+                    <th scope="col">성별</label></th>
+                    <th scope="col"><label for="x5">연락처</label></th>
+                    <th>
+                        <button type="button">내 보험료 확인></button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" id="x1" value="" />
+                    </td>
+                    <td>
+                        <input type="text" id="x2" value="" placeholder="예)19910101" />
+                    </td>
+                    <td>
+                        <input type="radio" id="x3" name="yun" />
+                        <label for="x3">남</label>
+                        <input type="radio" id="x4" name="yun" />
+                        <label for="x4">여</label>
+                    </td>
+                    <td>
+                        <input type="text" id="x5" placeholder="-없이 입력하세요">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
