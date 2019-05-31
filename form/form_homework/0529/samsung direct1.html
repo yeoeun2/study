@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <title>삼성화재 다이렉트_영문증명서_180514</title>
     <meta charset="utf-8">
@@ -13,12 +14,13 @@
             <h1>신청하실 증명서를 선택해 주세요.</h1>
         </div>
 
-        <div>
+        <fieldset>
+            <legend>증명서 선택</legend>
             <input type="checkbox" id="j1_1" name="j1" />
             <label for="j1_1">무사고 영문증명서</label>
             <input type="checkbox" id="j1_2" name="j1" />
             <label for="j1_2">자동차보험가입 영문증명서</label>
-        </div>
+        </fieldset>
     </section>
 
     <section>
@@ -45,10 +47,11 @@
                     <tr>
                         <th scope="row"><label for="a2">이메일</label></th>
                         <td>
-                            <input type="text" id="a2" title="이메일주소 앞" />
+                            <input type="text" id="a2" title="이메일 아이디" />
                             <span>@</span>
-                            <select title="이메일 계정">
-                                <option>선택하세요</option>
+                            <input type="text" title="이메일 주소 직접입력" />
+                            <select title="이메일 계정 선택">
+                                <option hidden>선택하세요</option>
                                 <option>google.com</option>
                                 <option>직접입력</option>
                             </select>
@@ -65,7 +68,7 @@
                     <tr>
                         <th scope="row"><label for="a4">함께 운전하는 가족 인원수</label></th>
                         <td>
-                            <select id="a4">
+                            <select id="a4" title="가족인원수 선택">
                                 <option>1명</option>
                                 <option>2명</option>
                                 <option>3명</option>
@@ -107,31 +110,36 @@
         <div>
             <input type="radio" id="s1_1" name="s1" checked />
             <label for="s1_1">이메일수신</label>
-            <input type="text" value="" title="이메일 앞주소" />
-            <span>@</span>
-            <select title="이메일주소 계정">
-                <option>google.com</option>
-                <option>naver.com</option>
-                <option>nate.com</option>
-                <option>직접입력</option>
+            <div>
+                <input type="text" value="" title="이메일 앞주소" />
+                <span>@</span>
+                <select title="이메일주소 계정">
+                    <option>google.com</option>
+                    <option>naver.com</option>
+                    <option>nate.com</option>
+                    <option>직접입력</option>
+                </select>
+            </div>
         </div>
         <div>
             <input type="radio" id="s1_2" name="s1" />
             <label for="s1_2">팩스수신</label>
-            <select title="팩스번호 앞자리">
-                <option>선택하세요</option>
-                <option>02</option>
-                <option>031</option>
-                <option>070</option>
-                <option>051</option>
-            </select>
-            <input type="text" value="" title="팩스번호 뒷자리" placeholdr="'-'없이 입력하세요">
+            <div>
+                <select title="팩스번호 앞자리">
+                    <option>선택하세요</option>
+                    <option>02</option>
+                    <option>031</option>
+                    <option>070</option>
+                    <option>051</option>
+                </select>
+                <input type="text" value="" title="팩스번호 뒷자리" placeholdr="'-'없이 입력하세요">
+            </div>
         </div>
     </section>
 
     <section>
         <div>
-            <h1>[필수]개인정보 수집 및 이용 동의</h1>
+            <h1>[필수]&lt;hhh&gt;개인정보 수집 및 이용 동의</h1>
             <button type="button">전체동의</button>
         </div>
 
@@ -155,10 +163,14 @@
 
         <div>
             <h2>정보보유 및 이용기간</h2>
-            <input type="radio" id="d2_1" name="d2" />
-            <label for="d2_1">동의</label>
-            <input type="radio" id="d2_2" name="d2" checked />
-            <label for="d1_2">비동의</label>
+            <fieldset>
+                <legend>정보보유 및 이용기간 동의여부</legend>
+                <input type="radio" id="d2_1" name="d2" />
+                <label for="d2_1">동의</label>
+                <input type="radio" id="d2_2" name="d2" checked />
+                <label for="d1_2">비동의</label>
+            </fieldset>
+
         </div>
 
         <div>
@@ -168,12 +180,12 @@
                 <li><strong>※단, 상법 등 법령의 규정에 의하여 보존할 필요성이 있는 경우에는 예외로 합니다.</strong></li>
             </ul>
         </div>
+
+        <p>개인정보보호 규정에 대한 전체 내용은 개인정보처리방침을 확인해 주세요.
+            <a href="https://www.samsungfire.com/util/P_U04_05_01_305.html" target="_blank" title="새 창 열림">개인정보처리방침</a>
+        </p>
     </section>
-
-    <p>&middot; 개인정보보호 규정에 대한 전체 내용은 개인정보처리방침을 확인해 주세요.
-        <a href="https://www.samsungfire.com/util/P_U04_05_01_305.html" target="_blank" title="새 창 열림">개인정보처리방침</a>
-    </p>
-
+    
     <div>
         알아두실 사항 (dt dd 를 썼던데.. 왜 그런건지 다시 한 번 듣기! )
     </div>
