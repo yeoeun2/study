@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>CSS_연습3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <link rel="stylesheet" href="/resources/css/common.css">
+    <link rel="stylesheet" href="/resources/css/test2.css">
+</head>
+
+<body>
+    <div class="base-wrap">
+        <div class="box-base1">1박스</div>
+        <div class="box-base2">2박스</div>
+        <div class="box-base3">3박스</div>
+    </div>
+
+    <div>
+        <h1 class="h1">보험계약변경</h1>
+    </div>
+
+    <div>
+        <h2 class="h2">변경을 원하시는 계약을 선택해 주세요.</h2>
+    </div>
+
+    <table class="table-wrap">
+        <caption>보험계약 내용이 있는 테이블</caption>
+        <colgroup>
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+        </colgroup>
+        <thead class="table_head1">
+            <tr>
+                <th scope="col">선택</th>
+                <th scope="col">상품명</th>
+                <th scope="col">상태</th>
+                <th scope="col">계약자</th>
+                <th scope="col">피보험자</th>
+                <th scope="col">보험기간</th>
+                <th scope="col">보험료</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <input type="radio" id="a1_1" name="a1" checked />
+                    <label for="a1_1">글로벌케어 60900221*****</label>
+                </td>
+                <td>
+                    글로벌케어 <br />60900221*****
+                </td>
+                <td>유지</td>
+                <td>김상성</td>
+                <td>김삼성</td>
+                <td>
+                    2009.02.06~<br />2030.02.06
+                </td>
+                <td>48,000원</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" id="a1_2" name="a1" />
+                    <label for="a1_2">글로벌케어 50901200*****</label>
+                </td>
+                <td>
+                    글로벌케어 <br />50901200*****
+                </td>
+                <td>유지</td>
+                <td>김삼성</td>
+                <td>김삼성</td>
+                <td>
+                    2009.05.06~<br />2030.05.06
+                </td>
+                <td>22,000원</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
